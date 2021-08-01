@@ -1,3 +1,4 @@
+//@author MIRZA MAHIR FAIAZ, Dept. of CSE, AUST
 #include<stdio.h>
 #include<bits/stdc++.h>
 
