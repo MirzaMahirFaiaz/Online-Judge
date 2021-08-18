@@ -4,7 +4,7 @@
 #define ll long long
 #define PI acos(-1)
 using namespace std;
-B. Who's Opposite.cpp
+
 int main()
 {
 
