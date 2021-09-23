@@ -1,0 +1,49 @@
+//@author MIRZA MAHIR FAIAZ, Dept. of CSE, AUST
+#include<stdio.h>
+#include<bits/stdc++.h>
+#define ll long long
+#define PI acos(-1)
+using namespace std;
+
+int main()
+{
+
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    ll t,i,j;
+    string s ;
+    cin>>t;
+
+    while( t-- ){
+        cin >> s ;
+        ll tot0=0, tot1 =0;
+        ll sz = s.size();
+        for(i=0; i<sz ; i++)
+		{
+			if(s[i] == '0')
+			tot0 ++;
+			else
+			tot1 ++;
+		}
+		ll ans = min(tot0, tot1);
+		ll pref0 = 0, pref1 = 0;
+		for(i=0; i<sz ; i++)
+		{
+		    if(s[i] == '0'){
+			pref0 ++;
+			tot0 --;
+		    }
+		    else{
+			pref1++;
+			tot1 --;
+		    }
+			ans = min(ans, pref1 +tot0);
+			ans = min(ans, pref0 +tot1);
+		}
+		cout << ans << endl;
+
+    }
+
+return 0;
+}
