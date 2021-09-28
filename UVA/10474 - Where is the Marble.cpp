@@ -29,11 +29,7 @@ int main()
             cin >> in;
 
             auto iter = lower_bound(vec.begin(), vec.end(),in);
-//            for(auto it=vec.begin();it!=vec.end();it++){
-//                if(*it==in){
-//
-//                }
-//            }
+        
             if (iter == vec.end() || *iter != in)
                 cout << in << " not found\n";
             else
