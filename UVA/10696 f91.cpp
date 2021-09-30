@@ -5,12 +5,6 @@
 #define PI acos(-1)
 using namespace std;
 
-//ll f91(ll n){
-//    if(n<=100)
-//      return  f91(f91(n+11));
-//
-//      return n-10;
-//}
 
 int main()
 {
