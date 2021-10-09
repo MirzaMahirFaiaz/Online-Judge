@@ -16,10 +16,6 @@ int main()
     cin>>t;
     while(t--){
         cin>>n;
-//        ans=sqrt(1+(8*n));
-//        ans--;
-//        ans/=2;
-//        i= ceil(ans);
 
         if(n!=1)
         cout<<"-"<<n-1<<" "<<n<<endl;
