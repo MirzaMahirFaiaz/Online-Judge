@@ -7,7 +7,7 @@ using namespace std;
 
 bool isprime[1030];
 
-void SE(){
+void seive(){
     memset(isprime, true, sizeof(isprime));
     ll i,j;
 
@@ -26,7 +26,7 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    SE();
+    seive();
 
     ll t,i,j,n,sum;
     string s;
