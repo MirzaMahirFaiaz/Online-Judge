@@ -31,7 +31,7 @@ int main()
          sort(b.begin(),b.end());
 
     for(i=0;i<n;i++){
-            if(abs(a[i] - b[i])>1){
+            if(a[i] - b[i]!=1 && a[i] - b[i]!=0){
                 flag=1;
                 break;
             }
